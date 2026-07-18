@@ -1,0 +1,92 @@
+/* Custom Global Cyber-System Layout Matrix */
+
+/* =========================================
+   STEP 2: Fixed Background System Architecture
+   ========================================= */
+.cyber-global-pipeline {
+    position: relative;
+    z-index: 10;
+}
+
+/* From About Section to End, this image acts as a locked structural background */
+.cyber-global-pipeline::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background-image: url('images/cyber-bg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    pointer-events: none;
+}
+
+/* =========================================
+   Interactive Components & Animations
+   ========================================= */
+/* Terminal Blink Character Simulation */
+.cursor {
+    display: inline-block;
+    width: 6px;
+    height: 1.2em;
+    background-color: #00f5d4;
+    animation: cursor-blink 0.8s step-end infinite;
+    margin-left: 4px;
+    vertical-align: middle;
+}
+
+@keyframes cursor-blink {
+    from, to { opacity: 1; }
+    50% { opacity: 0; }
+}
+
+/* Project Card Artifact Grid Scroller configuration */
+.project-scroll-container {
+    height: 290px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 1.25rem 1.25rem 0 0;
+    background-color: #02050a;
+}
+
+.project-scroll-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: transform 4s cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.project-card:hover .project-scroll-content {
+    transform: translateY(calc(-100% + 290px));
+}
+
+.project-scroll-content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    display: block;
+}
+
+/* Capability Loaders */
+.progress-bar-fill {
+    transition: width 1.5s cubic-bezier(0.1, 1, 0.1, 1);
+}
+
+/* Scrollbar Customization */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: #030712;
+}
+::-webkit-scrollbar-thumb {
+    background: #1f2937;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #00f5d4;
+}
