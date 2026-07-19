@@ -66,7 +66,7 @@ const PORTFOLIO_CONFIG = {
         { title: "************", desc: "Recognized for Student Management System using Java, JavaFX, and FXML" },
         { title: "***********", desc: "***********" },
         { title: "*********", desc: "***********" },
-        { title: "********", desc: "************" }
+        { title: "********", desc: "**********" }
     ]
 };
 
