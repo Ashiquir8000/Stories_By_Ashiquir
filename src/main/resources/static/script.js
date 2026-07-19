@@ -63,10 +63,10 @@ const PORTFOLIO_CONFIG = {
         { title: "SSC", institution: "Shaheed Police Smriti College", result: "GPA 4.87" }
     ],
     achievements: [
-        { title: "CSE Fest Certificate", desc: "Recognized for Student Management System using Java, JavaFX, and FXML" },
-        { title: "On-Site Contestant", desc: "ICPC Dhaka Regional 2023" },
-        { title: "Top 10 Finisher", desc: "CSE FEST BUBT" },
-        { title: "Dean's List of Honor", desc: "Awarded for achieving a CGPA above 3.80 for five consecutive semesters" }
+        { title: "************", desc: "Recognized for Student Management System using Java, JavaFX, and FXML" },
+        { title: "***********", desc: "***********" },
+        { title: "*********", desc: "***********" },
+        { title: "********", desc: "************" }
     ]
 };
 
